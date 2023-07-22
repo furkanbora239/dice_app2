@@ -28,7 +28,6 @@ class _bottom_navBarState extends State<bottom_navBar> {
                 setState(() {
                   //artır
                   context.read<diceList>().addDice(randomNumber());
-                  //ChangeNotifier(); buna gerek yokmuş baya gereksiz bir parça
                 });
               },
               onLongPress: () {
@@ -93,7 +92,6 @@ class _bottom_navBarState extends State<bottom_navBar> {
                   if (i > 1) {
                     i--;
                     context.read<diceList>().removeDice(0);
-                    //ChangeNotifier();  una gerek yokmuş baya gereksiz bir parça
                   }
                 });
               },
